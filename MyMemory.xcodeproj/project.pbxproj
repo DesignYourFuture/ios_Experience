@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1305BC32606491E005BDA00 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1305BC12606491D005BDA00 /* SWRevealViewController.m */; };
+		B1305BEB260654E7005BDA00 /* account@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE2260654E7005BDA00 /* account@2x.jpg */; };
+		B1305BEC260654E7005BDA00 /* icon04.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE3260654E7005BDA00 /* icon04.png */; };
+		B1305BED260654E7005BDA00 /* icon03.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE4260654E7005BDA00 /* icon03.png */; };
+		B1305BEE260654E7005BDA00 /* icon06.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE5260654E7005BDA00 /* icon06.png */; };
+		B1305BEF260654E7005BDA00 /* profile-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE6260654E7005BDA00 /* profile-bg.png */; };
+		B1305BF0260654E7005BDA00 /* icon02.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE7260654E7005BDA00 /* icon02.png */; };
+		B1305BF1260654E7005BDA00 /* icon05.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE8260654E7005BDA00 /* icon05.png */; };
+		B1305BF2260654E7005BDA00 /* icon01.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BE9260654E7005BDA00 /* icon01.png */; };
+		B1305BF3260654E7005BDA00 /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = B1305BEA260654E7005BDA00 /* sidemenu.png */; };
 		B140807226047FB700FA0047 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B140807126047FB700FA0047 /* CSLogButton.swift */; };
-		B14080782604816A00FA0047 /* button-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B14080742604816A00FA0047 /* button-bg.png */; };
-		B14080792604816A00FA0047 /* fountainpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B14080752604816A00FA0047 /* fountainpen@2x.png */; };
-		B140807A2604816A00FA0047 /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B14080762604816A00FA0047 /* warning-icon-60@2x.png */; };
-		B140807B2604816A00FA0047 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B14080772604816A00FA0047 /* memo-background@2x.png */; };
 		B154EE2125F5D56A0061C4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B154EE2025F5D56A0061C4D1 /* AppDelegate.swift */; };
 		B154EE2325F5D56A0061C4D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B154EE2225F5D56A0061C4D1 /* SceneDelegate.swift */; };
 		B154EE2525F5D56A0061C4D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B154EE2425F5D56A0061C4D1 /* ViewController.swift */; };
@@ -27,12 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1305BC02606491D005BDA00 /* MyMemory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyMemory-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1305BC12606491D005BDA00 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B1305BC22606491D005BDA00 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B1305BE2260654E7005BDA00 /* account@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "account@2x.jpg"; sourceTree = "<group>"; };
+		B1305BE3260654E7005BDA00 /* icon04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon04.png; sourceTree = "<group>"; };
+		B1305BE4260654E7005BDA00 /* icon03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon03.png; sourceTree = "<group>"; };
+		B1305BE5260654E7005BDA00 /* icon06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon06.png; sourceTree = "<group>"; };
+		B1305BE6260654E7005BDA00 /* profile-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-bg.png"; sourceTree = "<group>"; };
+		B1305BE7260654E7005BDA00 /* icon02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon02.png; sourceTree = "<group>"; };
+		B1305BE8260654E7005BDA00 /* icon05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon05.png; sourceTree = "<group>"; };
+		B1305BE9260654E7005BDA00 /* icon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon01.png; sourceTree = "<group>"; };
+		B1305BEA260654E7005BDA00 /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenu.png; sourceTree = "<group>"; };
+		B1305C01260658E6005BDA00 /* MyMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B140807126047FB700FA0047 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
-		B14080742604816A00FA0047 /* button-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg.png"; sourceTree = "<group>"; };
-		B14080752604816A00FA0047 /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fountainpen@2x.png"; sourceTree = "<group>"; };
-		B14080762604816A00FA0047 /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-60@2x.png"; sourceTree = "<group>"; };
-		B14080772604816A00FA0047 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
-		B154EE1D25F5D56A0061C4D1 /* MyMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B154EE2025F5D56A0061C4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B154EE2225F5D56A0061C4D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B154EE2425F5D56A0061C4D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,25 +73,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1305BC526064930005BDA00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1305BE2260654E7005BDA00 /* account@2x.jpg */,
+				B1305BE9260654E7005BDA00 /* icon01.png */,
+				B1305BE7260654E7005BDA00 /* icon02.png */,
+				B1305BE4260654E7005BDA00 /* icon03.png */,
+				B1305BE3260654E7005BDA00 /* icon04.png */,
+				B1305BE8260654E7005BDA00 /* icon05.png */,
+				B1305BE5260654E7005BDA00 /* icon06.png */,
+				B1305BE6260654E7005BDA00 /* profile-bg.png */,
+				B1305BEA260654E7005BDA00 /* sidemenu.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1305C02260658FE005BDA00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		B154EE1425F5D56A0061C4D1 = {
 			isa = PBXGroup;
 			children = (
+				B1305C02260658FE005BDA00 /* Products */,
 				B154EE1F25F5D56A0061C4D1 /* MyMemory */,
-				B154EE1E25F5D56A0061C4D1 /* Products */,
+				B1305C01260658E6005BDA00 /* MyMemory.app */,
 			);
-			sourceTree = "<group>";
-		};
-		B154EE1E25F5D56A0061C4D1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B154EE1D25F5D56A0061C4D1 /* MyMemory.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B154EE1F25F5D56A0061C4D1 /* MyMemory */ = {
 			isa = PBXGroup;
 			children = (
+				B1305BC526064930005BDA00 /* Resources */,
 				B154EE2025F5D56A0061C4D1 /* AppDelegate.swift */,
 				B154EE2225F5D56A0061C4D1 /* SceneDelegate.swift */,
 				B154EE2425F5D56A0061C4D1 /* ViewController.swift */,
@@ -87,15 +118,14 @@
 				B154EE3125F5D56A0061C4D1 /* Info.plist */,
 				B154EE2925F5D56A0061C4D1 /* MyMemory.xcdatamodeld */,
 				B154EE3D25F5F3D30061C4D1 /* MemoListVC.swift */,
+				B1305BC22606491D005BDA00 /* SWRevealViewController.h */,
+				B1305BC12606491D005BDA00 /* SWRevealViewController.m */,
 				B154EE4025F5F3F90061C4D1 /* MemoFormVC.swift */,
-				B14080742604816A00FA0047 /* button-bg.png */,
-				B14080752604816A00FA0047 /* fountainpen@2x.png */,
-				B14080772604816A00FA0047 /* memo-background@2x.png */,
-				B14080762604816A00FA0047 /* warning-icon-60@2x.png */,
 				B154EE4325F5F4070061C4D1 /* MemoReadVC.swift */,
 				B154EE4625F5F41D0061C4D1 /* MemoCell.swift */,
 				B154EE4925F5F6500061C4D1 /* MemoData.swift */,
 				B140807126047FB700FA0047 /* CSLogButton.swift */,
+				B1305BC02606491D005BDA00 /* MyMemory-Bridging-Header.h */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -117,7 +147,7 @@
 			);
 			name = MyMemory;
 			productName = MyMemory;
-			productReference = B154EE1D25F5D56A0061C4D1 /* MyMemory.app */;
+			productReference = B1305C01260658E6005BDA00 /* MyMemory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,6 +161,7 @@
 				TargetAttributes = {
 					B154EE1C25F5D56A0061C4D1 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -143,7 +174,7 @@
 				Base,
 			);
 			mainGroup = B154EE1425F5D56A0061C4D1;
-			productRefGroup = B154EE1E25F5D56A0061C4D1 /* Products */;
+			productRefGroup = B154EE1425F5D56A0061C4D1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -157,13 +188,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B140807B2604816A00FA0047 /* memo-background@2x.png in Resources */,
+				B1305BEF260654E7005BDA00 /* profile-bg.png in Resources */,
+				B1305BF2260654E7005BDA00 /* icon01.png in Resources */,
+				B1305BEB260654E7005BDA00 /* account@2x.jpg in Resources */,
 				B154EE3025F5D56A0061C4D1 /* LaunchScreen.storyboard in Resources */,
 				B154EE2D25F5D56A0061C4D1 /* Assets.xcassets in Resources */,
-				B14080782604816A00FA0047 /* button-bg.png in Resources */,
-				B14080792604816A00FA0047 /* fountainpen@2x.png in Resources */,
-				B140807A2604816A00FA0047 /* warning-icon-60@2x.png in Resources */,
+				B1305BF0260654E7005BDA00 /* icon02.png in Resources */,
+				B1305BED260654E7005BDA00 /* icon03.png in Resources */,
 				B154EE2825F5D56A0061C4D1 /* Main.storyboard in Resources */,
+				B1305BEC260654E7005BDA00 /* icon04.png in Resources */,
+				B1305BF3260654E7005BDA00 /* sidemenu.png in Resources */,
+				B1305BEE260654E7005BDA00 /* icon06.png in Resources */,
+				B1305BF1260654E7005BDA00 /* icon05.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +218,7 @@
 				B154EE2325F5D56A0061C4D1 /* SceneDelegate.swift in Sources */,
 				B140807226047FB700FA0047 /* CSLogButton.swift in Sources */,
 				B154EE4A25F5F6500061C4D1 /* MemoData.swift in Sources */,
+				B1305BC32606491E005BDA00 /* SWRevealViewController.m in Sources */,
 				B154EE4425F5F4070061C4D1 /* MemoReadVC.swift in Sources */,
 				B154EE4725F5F41D0061C4D1 /* MemoCell.swift in Sources */,
 			);
@@ -330,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38PD5AHVVF;
 				INFOPLIST_FILE = MyMemory/Info.plist;
@@ -339,6 +377,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lgw9898.MyMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyMemory/MyMemory-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -349,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38PD5AHVVF;
 				INFOPLIST_FILE = MyMemory/Info.plist;
@@ -358,6 +399,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lgw9898.MyMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyMemory/MyMemory-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
