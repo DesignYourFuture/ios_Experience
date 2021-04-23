@@ -8,10 +8,12 @@
 import UIKit
 
 class MemoListVC: UITableViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
+    lazy var dao = MemoDAO()
     
     // 앱 델리게이트 객체의 참조 정보를 읽어온다.
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-
+    var lgwCodeParity = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,7 @@ class MemoListVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        searchBar.enablesReturnKeyAutomatically = false // 검색 바에 값이 입력되지 않은 상태에서는 검색 버튼도 활성화 되지 않기 때문에 이에 대한 수정이 필요 - 검색 바의 키보드에서 리턴 키가 활성화될 수 있도록 처리
         
         if let revealVC = self.revealViewController() { // SWRevealViewController 라이브러리의 객체를 읽어온다
             
@@ -38,7 +41,21 @@ class MemoListVC: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         // 화면이 나타날 때마다 호출되는 메소드
+        self.appDelegate.memolist = self.dao.fetch() // 코어 데이터에 저장된 데이터를 가져온다.
+        
         self.tableView.reloadData() // 테이블 데이터를 다시 읽어 들이기. 이에 따라 행을 구성하는 로직이 재실행 될 것임. - 항상 최신 목록을 유지할 수 있다.
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: UserInfoKey.tutorial) == false && lgwCodeParity == 0 { // 튜토리얼 값이 없다면 튜토리얼 화면 띄워주기
+            // 여기서 패리티를 내가 직접 만들어서 초기에 한번만 사용하게끔 했는데 이건 수정 필요
+            
+            let vc = self.instanceTutorialVC(name: "MasterVC")
+            vc?.modalPresentationStyle = .automatic
+            self.present(vc!, animated: false, completion: nil)
+            
+            lgwCodeParity += 1
+            
+            return
+        }
     }
     
     
@@ -93,6 +110,28 @@ class MemoListVC: UITableViewController {
         // 값을 전달한 다음, 상세 화면을 이동
         vc.param = row
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let data = self.appDelegate.memolist[indexPath.row]
+        
+        // 코어 데이터에서 삭제한 다음, 배열 내 데이터 및 테이블 뷰 행을 차례로 삭제한다.
+        if dao.delete(data.objectID!) {
+            self.appDelegate.memolist.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ senderBar: UISearchBar) {
+        let keyword = searchBar.text // 검색 바에 입력된 키워드를 가져온다
+        
+        // 키워드를 적용하여 데이터를 검색하고, 테이블 뷰를 갱신한다.
+        self.appDelegate.memolist = self.dao.fetch(keyword: keyword)
+        self.tableView.reloadData()
     }
 
 }

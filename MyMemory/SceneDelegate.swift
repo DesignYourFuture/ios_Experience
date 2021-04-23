@@ -17,6 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        
+        // 페이지 인디케이터 설정을 위한 외형 템플릿 구문 - 튜토리얼 마스터에 사용된 거
+        let pageControl = UIPageControl.appearance() // 어피어런스는 특정 타입의 객체에 대한 이형 속성을 일괄로 설정할 수 있도록 템플릿 객체를 반환하는 메소드
+        pageControl.pageIndicatorTintColor = .lightGray
+        pageControl.currentPageIndicatorTintColor = .black
+        pageControl.backgroundColor = .white
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
